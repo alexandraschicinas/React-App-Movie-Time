@@ -6,7 +6,7 @@ import React from 'react';
                 
             <div  className="content">
                 <div id="content1">
-                <h1> Trending Movie</h1>
+                <h1> Trending Movie </h1>
                 </div>
 
                 <div id="content2">

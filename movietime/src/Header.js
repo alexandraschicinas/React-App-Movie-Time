@@ -9,17 +9,17 @@ const Header = (props) => (
           />
           </div>
           <div id="Home">
-              <h1>Home</h1>
+              <h3>Home</h3>
           </div>
           <div id="genres">
-              <h1><a href="https://api.themoviedb.org/3/genre/movie/list?api_key=697bccbdd485f20ab91cbd1ed65ce799&language=en-US"> Genres</a></h1>
+              <h3><a href="https://api.themoviedb.org/3/genre/movie/list?api_key=697bccbdd485f20ab91cbd1ed65ce799&language=en-US"> Genres</a></h3>
              
           </div>
           <div id="movies">
-              <h1>Movies</h1>
+              <h3>Movies</h3>
           </div>
           <div id="list">
-              <h1>My List</h1>
+              <h3>My List</h3>
           </div>
           <div id="input">
               <input type="search" placeholder="Search"/>

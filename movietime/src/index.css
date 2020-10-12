@@ -1,5 +1,4 @@
-body {
-  
+body {  
   width : 100vw;
   height: 100vh;
   margin: 0px;
@@ -17,9 +16,7 @@ background:
 .container {
   
   display: flex;
-  flex-direction: row;
- 
-  
+  flex-direction: row; 
 }
 
 #Home{
@@ -36,12 +33,10 @@ background:
 }
 
 #input {
-  padding-top: 70px;
+  padding-top: 55px;
   padding-left: 200px;
  
 }
-
-
 
 .image {
   width:90px;
@@ -52,27 +47,24 @@ background:
 
 .content { 
   display: flex;
-  justify-content: center;
   flex-direction: column;
  
 }
 
 #content1 {
   width:100vw;
-  height:400px;
+  height:250px;
 
 }
 
-#content2{
+#content2 {
   width:100vw;
   height:200px;
 
 }
 
-footer{
-  width: 100vw;
-  height:80px;
+footer {
   display: flex;
   justify-content:  center;
- margin-top:500px;
+  
 }

@@ -6,12 +6,14 @@ import './index.css'
 
 
 
-function App() {
+const App = () => {
   return (
-     <Header/>,
-  <Content/>,
+     <div>
+     <Header/>
+   <Content/>
   <Footer/>
-   )
-}
+  </div>
+   );
+  }
 
 export default App;
