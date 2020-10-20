@@ -33,6 +33,17 @@ background:
   padding-left: 200px; 
 }
 
+.image {
+  width:90px;
+  height:90px;
+  margin-left:50px;
+  margin-top:10px;
+}
+
+
+
+
+
 #content1 {
   display: flex;
   flex-direction: row;
@@ -49,6 +60,16 @@ footer {
   display: flex;
   justify-content:  center;
   height: 50px; 
+}
+
+ul{
+  display: table;
+ 
+
+}
+li{display: table-cell;
+  padding:50px;
+
 }
 
 
