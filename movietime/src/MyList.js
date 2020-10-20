@@ -1,4 +1,5 @@
-import React from 'react'
-export const MyList =()=>(
-    <h2></h2>
+import React from 'react';
+
+export const MyList = () => (
+    <h2> </h2>
 )

@@ -1,4 +1,5 @@
-import React from 'react'
-export const Home =()=>(
-   <h2></h2>
+import React from 'react';
+
+export const Home = () => (
+    <h2></h2>
 )
