@@ -1,4 +1,5 @@
 import React from 'react';
+import TrendingMovie from './TrendingMovie';
 
     const Content = ()=> {
         return (
@@ -6,7 +7,7 @@ import React from 'react';
                 
             <div  className="content">
                 <div id="content1">
-                <h1> Trending Movie </h1>
+                <TrendingMovie  />
                 </div>
 
                 <div id="content2">
@@ -19,3 +20,5 @@ import React from 'react';
     }
 
 export default Content;
+
+//https://www.themoviedb.org/trending/movie/week?api_key=697bccbdd485f20ab91cbd1ed65ce799
