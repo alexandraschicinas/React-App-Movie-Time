@@ -13,8 +13,8 @@ const TrendingMovie = () => {
       });
   }, [setMovies]);
 
-  return <div>{movies.map(movie => 
-  <h2 key={movie.poster}><img src = "{movie.poster_path}"/> {movie.name}</h2>)}
+  return <div>{movies.map((movie,index )=> 
+  <h2  key={index}><img src = "{movie.poster_path}"/> {movie.name}</h2>)}
   </div>;
 };
 export default TrendingMovie;
