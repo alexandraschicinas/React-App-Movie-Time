@@ -14,6 +14,6 @@ const App = () => {
   <Footer/>
   </div>
    );
-  }
+}
 
 export default App;
