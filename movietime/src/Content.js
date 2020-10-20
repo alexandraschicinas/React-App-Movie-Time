@@ -1,5 +1,6 @@
 import React from 'react';
-import TrendingMovie from './TrendingMovie';
+import MovieCardT from "./MovieCardT";
+import {Frozen} from './Frozen'
 
     const Content = ()=> {
         return (
@@ -7,7 +8,7 @@ import TrendingMovie from './TrendingMovie';
                 
             <div  className="content">
                 <div id="content1">
-                <TrendingMovie  />
+                <MovieCardT Frozen = {Frozen} />
                 </div>
 
                 <div id="content2">

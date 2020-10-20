@@ -13,23 +13,20 @@ background:
   linear-gradient(245deg, hsla(251.96, 92.95%, 44.85%, 1) 100%, hsla(251.96, 92.95%, 44.85%, 0) 70%);
 }
 
+
 .container {
   
   display: flex;
   flex-direction: row; 
 }
 
-#Home{
-  padding:40px;
+ul {
+  display: table;
+  padding: 20px;
 }
-#genres{
-  padding:40px;
-}
-#movies{
-  padding:40px;
-}
-#list{
-  padding:40px;
+li {
+  display: table-cell;
+  padding: 50px;
 }
 
 #input {
