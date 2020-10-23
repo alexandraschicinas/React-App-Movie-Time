@@ -8,6 +8,7 @@ import "./index.css";
 
 const App = () => {
   return (
+<<<<<<< HEAD
     <BrowserRouter>
       <NavBar />
       <Switch>
@@ -20,5 +21,14 @@ const App = () => {
     </BrowserRouter>
   );
 };
+=======
+     <div>
+     <Header/>
+   <Content/>
+  <Footer/>
+  </div>
+   );
+}
+>>>>>>> bba86dce25b50926dcd6a8a0492d94e97fb5b721
 
 export default App;
