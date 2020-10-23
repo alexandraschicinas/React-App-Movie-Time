@@ -31,15 +31,10 @@ body {
       hsla(251.96, 92.95%, 44.85%, 0) 70%
     );
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> bba86dce25b50926dcd6a8a0492d94e97fb5b721
 .container {
   display: flex;
   flex-direction: row;
 }
-<<<<<<< HEAD
 .nav {
   display: flex;
   flex-direction: row;
@@ -52,56 +47,20 @@ li {
   justify-content: space-between;
   padding: 20px;
   font-size: 30px;
-=======
-
-#Home{
-  padding:40px;
-}
-#genres{
-  padding:40px;
-}
-#movies{
-  padding:40px;
-
-
-ul {
-  display: table;
-  padding: 20px;
-
-}
-li {
-  display: table-cell;
-  padding: 50px;
-}
-#input {
-  padding-top: 55px;
-  padding-left: 200px; 
->>>>>>> bba86dce25b50926dcd6a8a0492d94e97fb5b721
 }
 .list {
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
 }
 .image {
   width: 90px;
   height: 90px;
-=======
-  width:100vw;
-  height:250px;
-}
-
-#content2 {
-  width:100vw;
-  height:200px;
->>>>>>> bba86dce25b50926dcd6a8a0492d94e97fb5b721
 }
 #input {
   padding: 35px;
   }
 footer {
   display: flex;
-<<<<<<< HEAD
   justify-content: center;
   height: 50px;
 }
@@ -115,8 +74,4 @@ footer {
   padding:10px;
   
   
-=======
-  justify-content:  center;
-  height: 50px; 
->>>>>>> bba86dce25b50926dcd6a8a0492d94e97fb5b721
 }
