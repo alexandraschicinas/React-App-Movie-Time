@@ -2,13 +2,15 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./Home";
 import { Movies } from "./Movies";
-import { MyList } from "./MyList";
+import  MyList  from "./MyList";
 import NavBar from "./NavBar";
 import "./index.css";
+import {GlobalProvider} from './GlobalState'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <GlobalProvider>
+      <BrowserRouter>
       <NavBar />
       <Switch>
         <Route exact={true} path="/" component={Home} />
@@ -18,6 +20,8 @@ const App = () => {
         <Route exact path="/mylist" component={MyList} />
       </Switch>
     </BrowserRouter>
+    </GlobalProvider>
+    
   );
 };
 
