@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { checkMovie, getWishlist, updateWishlist } from "./util/wishlist";
+import { checkMovie, updateWishlist } from "./util/wishlist";
 
 const MovieType = (props) => {
   console.log(props);
@@ -28,10 +28,9 @@ const MovieType = (props) => {
           ></iframe>
         )}
       </div>
-
-        {/* <div>{movie.title}</div> 
-        <div>{movie.release_date}</div>
-        <div>{movie.overview}</div>  */}
+        <div className="title">Title: {movie && movie.title}</div> 
+        <div className="date">Release date: {movie && movie.release_date}</div>
+        <div className="plot">Plot: {movie && movie.overview}</div>  
         <button disabled={isMovieInWishlist} onClick={handleClick}>
         
         {isMovieInWishlist ? "ADDED TO MY LIST" : "ADD TO MY LIST"}

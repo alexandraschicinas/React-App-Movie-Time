@@ -1,6 +1,6 @@
 body {
   width: 100vw;
-  background-color: rgb(48,47,49);
+  background-color: rgb(128, 125, 131);
   height: 100vh;
   margin: 10px;
   padding: 10px;
@@ -29,6 +29,7 @@ li {
     justify-content: space-around;
     width: calc(100vw - 140px);
     height: 90px;
+    font-family: fantasy;
   }
 .Link {
   display:inline-block;
@@ -45,11 +46,6 @@ li {
   height: 90px;
   padding-left: 50px;
 }
-footer {
-  display: flex;
-  justify-content: center;
-  height: 50px;
-}
 .Movies {
   display: flex;
   justify-content: space-between;
@@ -64,24 +60,45 @@ footer {
 .mylist {
   color: white;
 }
-.title, .genre {
-  background-color: rgb(51,51,56);
-  color: white;
+ .genre {
+  background-color: rgb(106, 103, 109);
+  color: rgb(5, 140, 222);
+  text-decoration: none;
+  font-family: fantasy;
+  border-radius: 2%;
   display: flex;
-  align-items: flex-end;
-  
+  justify-content: center;
 }
 
+.title {
+  color:rgb(15, 154, 235);
+  font-family: fantasy;
+  font-weight: bold;
+}
 .trailer {
   width: 700px;
   height: 500px;
 
 }
 
-.movie{
+.poster {
   display: flex;
   flex-direction: column;
   border-radius: 2%;
   box-shadow: 2px 2px 4px black;
   margin: 20px;  
+}
+
+.poster {
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 400px;
+}
+.date, .plot {
+ color: rgb(5, 140, 222);
+ font-family: fantasy;
+ width: 700px;
+
+
 }
