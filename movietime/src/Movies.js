@@ -43,7 +43,7 @@ export const Movies = () => {
 
   return (
     <div className="">
-      {/* <SearchBox searchMovies={searchMovies} /> */}
+      <SearchBox searchMovies={searchMovies} />
       <div className="Movies">
         {" "}
         {movies.map((movie, index) => (
@@ -52,18 +52,11 @@ export const Movies = () => {
             key={`index${movie.title}${movie.id}`}
           >
             <div
-              className="movie"
-              style={{
-                backgroundImage: `url(https://image.tmdb.org/t/p/w500/${movie.poster_path})`,
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                width: "200px",
-                height: "400px",
-              }}
-            >
-              {/* <img 
+              className="poster">
+
+             <img 
       src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} 
-      alt={`${movie.title} Poster`}/>  */}
+      alt={`${movie.title} Poster`}/> 
               <div id="para"> {movie.title}</div>
               <div>
                 {" "}

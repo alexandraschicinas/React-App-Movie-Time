@@ -29,7 +29,7 @@ li {
     justify-content: space-around;
     width: calc(100vw - 140px);
     height: 90px;
-    font-family: fantasy;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
 .Link {
   display:inline-block;
@@ -53,6 +53,7 @@ li {
   margin: 10px;
   padding: 10px;
   transition: all 1s;
+
 }
 .Movies :hover {
   transform: scale(1.05);
@@ -62,17 +63,19 @@ li {
 }
  .genre {
   background-color: rgb(106, 103, 109);
-  color: rgb(5, 140, 222);
-  text-decoration: none;
-  font-family: fantasy;
-  border-radius: 2%;
+  color: rgb(207, 224, 235);
+  font-family: Georgia, 'Times New Roman', Times, serif;
   display: flex;
   justify-content: center;
 }
+.genre-link{
+  text-decoration: none;
+
+}
 
 .title {
-  color:rgb(15, 154, 235);
-  font-family: fantasy;
+  color:rgb(207, 224, 235);
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
 }
 .trailer {
@@ -87,17 +90,14 @@ li {
   border-radius: 2%;
   box-shadow: 2px 2px 4px black;
   margin: 20px;  
-}
-
-.poster {
   background-size:contain;
   background-repeat: no-repeat;
   width: 200px;
   height: 400px;
 }
 .date, .plot {
- color: rgb(5, 140, 222);
- font-family: fantasy;
+ color: rgb(207, 224, 235);
+ font-family: Georgia, 'Times New Roman', Times, serif;
  width: 700px;
 
 

@@ -42,7 +42,7 @@ const Home = (props) => {
     <div>
       <div className="Movies">
         {movies.map((movie, index) =>
-           <Link to={`/movie/${movie.id}`} key={`index${movie.title}${movie.id}`}>
+           <Link className="genre-link" to={`/movie/${movie.id}`} key={`index${movie.title}${movie.id}`}>
 
               <img className="poster"
               src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} 

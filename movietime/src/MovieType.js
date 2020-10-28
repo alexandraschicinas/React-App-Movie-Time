@@ -4,19 +4,21 @@ import { checkMovie, updateWishlist } from "./util/wishlist";
 const MovieType = (props) => {
   console.log(props);
   const [movie, setMovie] = useState(null);
+  const [movieAdded, setMovieAdded] = useState(false);
 
-  useEffect(() => {
+  useEffect((id) => {
     fetch(
       `https://api.themoviedb.org/3/movie/${props.match.params.id}?api_key=697bccbdd485f20ab91cbd1ed65ce799&language=en-US&append_to_response=videos`
     )
       .then((response) => response.json())
       .then((responseJson) => setMovie(responseJson));
-  });
+  },[]);
   console.log(movie);
 
   const isMovieInWishlist = movie && checkMovie(movie.id);
   const handleClick = () => {
     updateWishlist(movie);
+    setMovieAdded(true);
   };
 
   return (
