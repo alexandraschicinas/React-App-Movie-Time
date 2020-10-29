@@ -8,6 +8,8 @@ const MyList = ()=>{
     return (
 
         <div className="Movies"> {movies.map((movie,index )=>
+          <div>
+            {/* <button onClick={()=> removeItem()}> X </button> */}
             <Link to={ `/movie/${movie.id}`} key={`index${movie.title}${movie.id}`}>
               <div> 
            <img className="poster"
@@ -19,6 +21,7 @@ const MyList = ()=>{
                ))} */}
             </div>
             </Link>
+            </div>
             )
             }
             </div>
