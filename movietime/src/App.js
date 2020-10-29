@@ -1,19 +1,22 @@
 import React from 'react';
-import Header from './Header';
-import Content from './Content';
-import Footer from './Footer';
+import {BrowserRouter, Route, Switch } from 'react-router-dom'
+ import Home from './Home';
+import NavBar from './NavBar';
+ import MyList from './MyList';
+import MovieType from './MovieType'
 import './index.css' 
-import {BrowserRouter} from 'react-router-dom'
-
 
 
 const App = () => {
   return (
-     <div>
-     <Header/>
-   <Content/>
-  <Footer/>
-  </div>
+    <BrowserRouter>   
+          <NavBar />
+    <Switch>
+      <Route exact={true} path='/' component={Home} />
+      <Route exact path="/movie/:id" component={MovieType}/>
+      <Route  exact path="/Mylist" component={MyList}/>
+    </Switch>
+    </BrowserRouter> 
    );
 }
 
