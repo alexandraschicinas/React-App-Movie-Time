@@ -1,54 +1,104 @@
-body {  
-  width : 100vw;
+body {
+  width: 100vw;
+  background-color: rgb(128, 125, 131);
   height: 100vh;
-  margin: 0px;
-  padding: 0px;
+  margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-background:
-  linear-gradient(139deg, hsla(209.66, 99.79%, 44.09%, 1) 0%, hsla(209.66, 99.79%, 44.09%, 0) 65%),
-  linear-gradient(135deg, hsla(255.85, 69.81%, 14.3%, 1) 0%, hsla(255.85, 69.81%, 14.3%, 0) 70%),
-  linear-gradient(25deg, hsla(251.32, 72.41%, 15.49%, 1) 10%, hsla(251.32, 72.41%, 15.49%, 0) 80%),
-  linear-gradient(315deg, hsla(235.47, 61.86%, 17.5%, 1) 15%, hsla(235.47, 61.86%, 17.5%, 0) 80%),
-  linear-gradient(245deg, hsla(251.96, 92.95%, 44.85%, 1) 100%, hsla(251.96, 92.95%, 44.85%, 0) 70%);
 }
 .container {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
 }
-#Home{
-  padding:40px;
-}
-#genres{
-  padding:40px;
-}
-#movies{
-  padding:40px;
-}
-#list{
-  padding:40px;
-}
-#input {
-  padding-top: 55px;
-  padding-left: 200px; 
-}
-
-#content1 {
+.nav {
   display: flex;
   flex-direction: row;
-  width:100vw;
-  height:250px;
+  margin-top: 10px;
 }
-
-#content2 {
-  width:100vw;
-  height:200px;
-}
-
-footer {
+li {
   display: flex;
-  justify-content:  center;
-  height: 50px; 
+  font-size: 30px;
+  }
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: calc(100vw - 140px);
+    height: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+.Link {
+  display:inline-block;
+  margin-left:10px;
+  color: rgb(15, 154, 235);
+  text-decoration: none;
+  }
+.list :hover {
+  color: white;
+  text-decoration: none;
+}
+.image {
+  width: 90px;
+  height: 90px;
+  padding-left: 50px;
+}
+.Movies {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
+  transition: all 1s;
+
+}
+.Movies :hover {
+  transform: scale(1.05);
+}
+.mylist {
+  color: white;
+}
+ .genre {
+  background-color: rgb(106, 103, 109);
+  color: rgb(207, 224, 235);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+}
+.genre-link{
+  text-decoration: none;
+
 }
 
+.title {
+  color:rgb(207, 224, 235);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+.trailer {
+  width: 700px;
+  height: 500px;
 
+}
+
+.poster {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2%;
+  box-shadow: 2px 2px 4px black;
+  margin: 20px;  
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 400px;
+}
+.date, .plot {
+ color: rgb(207, 224, 235);
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ width: 700px;
+
+
+}
