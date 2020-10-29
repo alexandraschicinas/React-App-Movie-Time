@@ -10,7 +10,6 @@ import {Link} from 'react-router-dom'
           />
         <ul className="list">
             <li > <Link className="Link" to="/"> Home </Link> </li>
-             {/* <li> <Link  className="Link" to="/movies"> Movies</Link></li> */}
             <li> <Link className="Link" to="/mylist"> My List</Link></li>
         </ul>
     </div>

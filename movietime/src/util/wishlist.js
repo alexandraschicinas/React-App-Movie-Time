@@ -8,6 +8,7 @@ export const checkMovie = (id) => {
     return wishlist.findIndex((movie) => movie.id === id ) !== -1;
 }
 
+
 export const updateWishlist = (movie) =>{
         const isMovieInWishlist= checkMovie(movie.id);
         if (isMovieInWishlist) return;
