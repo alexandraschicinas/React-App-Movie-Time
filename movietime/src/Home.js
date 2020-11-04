@@ -14,7 +14,6 @@ const Home = () => {
         "https://api.themoviedb.org/3/genre/movie/list?api_key=697bccbdd485f20ab91cbd1ed65ce799&language=en-US"
       ).then((response) => response.json()),
     ]).then((jsonResult) => {
-      console.log(jsonResult);
       const moviesResponse =
         jsonResult[0] &&
         jsonResult[0].results &&
@@ -34,7 +33,6 @@ const Home = () => {
       setMovies(moviesResponse);
     });
   }, []);
-  console.log(movies);
 
   return (
     <Scroll>
