@@ -3,6 +3,7 @@ import { checkMovie, updateWishlist } from "./util/wishlist";
 
 const MovieType = (props) => {
   const [movie, setMovie] = useState(null);
+  const [movieAdded, setMovieAdded] = useState(false)
 
   useEffect(() => {
     fetch(
@@ -15,6 +16,7 @@ const MovieType = (props) => {
   const isMovieInWishlist = movie && checkMovie(movie.id);
   const handleClick = () => {
     updateWishlist(movie);
+    setMovieAdded(true);
   };
 
   return (
