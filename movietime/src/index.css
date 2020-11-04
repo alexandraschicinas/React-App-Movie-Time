@@ -19,24 +19,24 @@ body {
 li {
   display: flex;
   font-size: 30px;
-  }
+}
 .list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: calc(100vw - 140px);
-    height: 90px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: calc(100vw - 140px);
+  height: 90px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 .Link {
-  display:inline-block;
-  margin-left:10px;
+  display: inline-block;
+  margin-left: 10px;
   color: rgb(15, 154, 235);
   text-decoration: none;
-  }
+}
 .list :hover {
   color: white;
   text-decoration: none;
@@ -53,7 +53,6 @@ li {
   margin: 10px;
   padding: 10px;
   transition: all 1s;
-
 }
 .Movies :hover {
   transform: scale(1.05);
@@ -61,27 +60,25 @@ li {
 .mylist {
   color: white;
 }
- .genre {
+.genre {
   background-color: rgb(106, 103, 109);
   color: rgb(207, 224, 235);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   display: flex;
   justify-content: center;
 }
-.genre-link{
+.genre-link {
   text-decoration: none;
-
 }
 
 .title {
-  color:rgb(207, 224, 235);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(207, 224, 235);
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
 }
 .trailer {
   width: 700px;
   height: 500px;
-
 }
 
 .poster {
@@ -89,16 +86,15 @@ li {
   flex-direction: column;
   border-radius: 2%;
   box-shadow: 2px 2px 4px black;
-  margin: 20px;  
-  background-size:contain;
+  margin: 20px;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 200px;
   height: 400px;
 }
-.date, .plot {
- color: rgb(207, 224, 235);
- font-family: Georgia, 'Times New Roman', Times, serif;
- width: 700px;
-
-
+.date,
+.plot {
+  color: rgb(207, 224, 235);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 700px;
 }

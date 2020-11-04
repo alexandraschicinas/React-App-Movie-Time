@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Scroll from "./Scroll";
-//import MovieCard from "./MovieCard";
 
-const Home = (props) => {
+const Home = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -39,24 +38,29 @@ const Home = (props) => {
 
   return (
     <Scroll>
-    <div>
-      <div className="Movies">
-        {movies.map((movie, index) =>
-           <Link className="genre-link" to={`/movie/${movie.id}`} key={`index${movie.title}${movie.id}`}>
-
-              <img className="poster"
-              src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} 
-              alt={`${movie.title} Poster`}/>
-             
-               {movie.genres.map((genre) => (
-             <div className="genre" key={genre.id}> {genre.name} </div>
-               ))}
-            
-         </Link>
-        )}
+      <div>
+        <div className="Movies">
+          {movies.map((movie, index) => (
+            <Link
+              className="genre-link"
+              to={`/movie/${movie.id}`}
+              key={`index${movie.title}${movie.id}`}
+            >
+              <img
+                className="poster"
+                src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                alt={`${movie.title} Poster`}
+              />
+              {movie.genres.map((genre) => (
+                <div className="genre" key={genre.id}>
+                  {genre.name}
+                </div>
+              ))}
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
     </Scroll>
   );
-  }
+};
 export default Home;
