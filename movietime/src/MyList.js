@@ -1,19 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { getWishlist } from "./util/wishlist";
-//import {removeItemFromMyList} from './util/wishlist';
 const MyList = () => {
-  const movies = getWishlist();
+  const [movies, setMovies] = useState(getWishlist());
+  const removeItem = (id) => {
+    const wishlist = getWishlist();
+    const newList = wishlist.filter((movie) => {
+      if (movie.id === id) {
+        return false;
+      } else {
+        return true;
+      }
+    });
+    localStorage.setItem("wishlist", JSON.stringify(newList));
+    setMovies(newList);
+  };
   return (
-    <div>
-      {/* <div className="control-btn">
-             <button 
-                onClick={() => removeItemFromMyList()}>
-                    delete
-                </button> </div> */}
-      <div className="Movies">
-        
-        {movies.map((movie, index) => (
+    <div className="Movies">
+      {movies.map((movie, id) => (
+        <div>
+          <button onClick={() => removeItem(movie.id)}> X </button>
           <Link
             to={`/movie/${movie.id}`}
             key={`index${movie.title}${movie.id}`}
@@ -24,13 +30,10 @@ const MyList = () => {
                 src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                 alt={`${movie.title} Poster`}
               />
-              {/* {movie.genres.map((genre) => (
-             <div className="genre" key={genre.id}> {genre.name} </div>
-               ))} */}
             </div>
           </Link>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 };
