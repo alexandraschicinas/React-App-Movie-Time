@@ -20,8 +20,8 @@ const MovieType = (props) => {
   };
 
   return (
-    <div>
-      <div>
+    <div className="movie-details-wrapper">
+      <div className="trailer-wrapper">
         {movie && movie.videos && movie.videos.results && (
           <iframe
             className="trailer"
@@ -33,7 +33,7 @@ const MovieType = (props) => {
       <div className="title">Title: {movie && movie.title}</div>
       <div className="date">Release date: {movie && movie.release_date}</div>
       <div className="plot">Plot: {movie && movie.overview}</div>
-      <button disabled={isMovieInWishlist} onClick={handleClick}>
+      <button type="button" class="btn btn-secondary" disabled={isMovieInWishlist} onClick={handleClick}>
         {isMovieInWishlist ? "ADDED TO MY LIST" : "ADD TO MY LIST"}
       </button>
     </div>

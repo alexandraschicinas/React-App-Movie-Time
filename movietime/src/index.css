@@ -1,23 +1,31 @@
+/* Common features */
 body {
   width: 100vw;
   background-color: rgb(128, 125, 131);
   height: 100vh;
-  margin: 10px;
-  padding: 10px;
+  margin: 0px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
 }
-.container {
-  display: flex;
-  flex-direction: row;
-}
+
+/* Navbar features */
 .nav {
   display: flex;
   flex-direction: row;
   margin-top: 10px;
+  width: 100%;
+  background-color: #88888f;
+  border-radius: 10px;
+  box-shadow: inset 3px -10px 9px -8px #444442;
 }
+.image {
+  width: 90px;
+  height: 90px;
+  margin-left: 50px;
+}
+
 li {
-  display: flex;
   font-size: 30px;
 }
 .list {
@@ -29,58 +37,94 @@ li {
   justify-content: space-around;
   width: calc(100vw - 140px);
   height: 90px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Ubuntu Condensed", Georgia, "Times New Roman", Times, serif;
+}
+
+.list :hover {
+  color: #cbcbcb;
+  text-decoration: none;
+  letter-spacing: 1px;
 }
 .Link {
   display: inline-block;
   margin-left: 10px;
-  color: rgb(15, 154, 235);
+  color: rgb(124, 192, 231);
   text-decoration: none;
+  transition: 1s;
 }
-.list :hover {
-  color: white;
-  text-decoration: none;
-}
-.image {
-  width: 90px;
-  height: 90px;
-  padding-left: 50px;
-}
+/* Movie content features */
 .Movies {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 10px;
   padding: 10px;
-  transition: all 1s;
+  background-color: #88888f;
+  border-radius: 10px;
+  box-shadow: 5px -5px 9px -8px #444442;
+  transition: all 5s;
 }
+
 .Movies :hover {
   transform: scale(1.05);
-}
-.mylist {
-  color: white;
-}
-.genre {
-  background-color: rgb(106, 103, 109);
-  color: rgb(207, 224, 235);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  display: flex;
-  justify-content: center;
-}
-.genre-link {
   text-decoration: none;
 }
 
-.title {
+.genre {
+  background-color: rgb(106, 103, 109);
   color: rgb(207, 224, 235);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bold;
+  font-family: "Ubuntu Condensed", Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.genre-link {
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Trailer features */
+.movie-details-wrapper {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin-top: 10px;
+  background-color: #88888f;
+  border-radius: 10px;
+  box-shadow: inset 3px -16px 9px -8px #444442;
 }
 .trailer {
   width: 700px;
   height: 500px;
 }
+.title {
+  color: rgb(207, 224, 235);
+  font-family: "Ubuntu Condensed", serif;
+  font-weight: bold;
+}
+.date,
+.plot {
+  color: rgb(207, 224, 235);
+  font-family: "Ubuntu Condensed", Georgia, "Times New Roman", Times, serif;
+  width: 700px;
+}
 
+/* My List features */
+.Movie {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
+  background-color: #88888f;
+  border-radius: 10px;
+  box-shadow: 5px -5px 9px -8px #444442;
+  transition: all 5s;
+}
 .poster {
   display: flex;
   flex-direction: column;
@@ -91,10 +135,4 @@ li {
   background-repeat: no-repeat;
   width: 200px;
   height: 400px;
-}
-.date,
-.plot {
-  color: rgb(207, 224, 235);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  width: 700px;
 }
