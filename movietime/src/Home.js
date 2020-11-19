@@ -36,7 +36,7 @@ const Home = () => {
 
   return (
     <Scroll>
-      <div>
+      <div className="Movies-wrapper">
         <div className="Movies">
           {movies.map((movie, index) => (
             <Link

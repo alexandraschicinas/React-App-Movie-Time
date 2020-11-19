@@ -1,7 +1,7 @@
 /* Common features */
 body {
   width: 100vw;
-  background-color: rgb(128, 125, 131);
+  background-color: rgb(20, 20, 20);
   height: 100vh;
   margin: 0px;
   padding: 0px;
@@ -23,6 +23,7 @@ body {
   width: 90px;
   height: 90px;
   margin-left: 50px;
+  border-radius: 5px;
 }
 
 li {
@@ -53,6 +54,7 @@ li {
   transition: 1s;
 }
 /* Movie content features */
+
 .Movies {
   display: flex;
   justify-content: space-between;
@@ -60,7 +62,7 @@ li {
   margin: 10px;
   padding: 10px;
   background-color: #88888f;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 5px -5px 9px -8px #444442;
   transition: all 5s;
 }
@@ -94,7 +96,7 @@ li {
   flex-direction: column;
   margin-top: 10px;
   background-color: #88888f;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: inset 3px -16px 9px -8px #444442;
 }
 .trailer {
@@ -121,7 +123,7 @@ li {
   margin: 10px;
   padding: 10px;
   background-color: #88888f;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 5px -5px 9px -8px #444442;
   transition: all 5s;
 }
