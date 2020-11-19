@@ -1,7 +1,7 @@
 /* Common features */
 body {
   width: 100vw;
-  background-color: rgb(20, 20, 20);
+  background-color: #cbcbcb;
   height: 100vh;
   margin: 0px;
   padding: 0px;
@@ -16,7 +16,7 @@ body {
   margin-top: 10px;
   width: 100%;
   background-color: #88888f;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: inset 3px -10px 9px -8px #444442;
 }
 .image {
