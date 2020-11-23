@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Scroll from "./Scroll";
-//import MovieCard from "./MovieCard";
 
-const Home = (props) => {
+const Home = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -15,7 +14,6 @@ const Home = (props) => {
         "https://api.themoviedb.org/3/genre/movie/list?api_key=697bccbdd485f20ab91cbd1ed65ce799&language=en-US"
       ).then((response) => response.json()),
     ]).then((jsonResult) => {
-      console.log(jsonResult);
       const moviesResponse =
         jsonResult[0] &&
         jsonResult[0].results &&
@@ -35,28 +33,32 @@ const Home = (props) => {
       setMovies(moviesResponse);
     });
   }, []);
-  console.log(movies);
 
   return (
     <Scroll>
-    <div>
-      <div className="Movies">
-        {movies.map((movie, index) =>
-           <Link className="genre-link" to={`/movie/${movie.id}`} key={`index${movie.title}${movie.id}`}>
-
-              <img className="poster"
-              src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} 
-              alt={`${movie.title} Poster`}/>
-             
-               {movie.genres.map((genre) => (
-             <div className="genre" key={genre.id}> {genre.name} </div>
-               ))}
-            
-         </Link>
-        )}
+      <div className="Movies-wrapper">
+        <div className="Movies">
+          {movies.map((movie, index) => (
+            <Link
+              className="genre-link"
+              to={`/movie/${movie.id}`}
+              key={`index${movie.title}${movie.id}`}
+            >
+              <img
+                className="poster"
+                src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                alt={`${movie.title} Poster`}
+              />
+              {movie.genres.map((genre) => (
+                <div className="genre" key={genre.id}>
+                  {genre.name}
+                </div>
+              ))}
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
     </Scroll>
   );
-  }
+};
 export default Home;
