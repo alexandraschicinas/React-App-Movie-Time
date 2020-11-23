@@ -1,7 +1,7 @@
 /* Common features */
 body {
   width: 100vw;
-  background-color: #cbcbcb;
+  background-color:#11123b;;
   height: 100vh;
   margin: 0px;
   padding: 0px;
@@ -15,7 +15,7 @@ body {
   flex-direction: row;
   margin-top: 10px;
   width: 100%;
-  background-color: #88888f;
+  background-color: #11123b;
   border-radius: 5px;
   box-shadow: inset 3px -10px 9px -8px #444442;
 }
@@ -27,7 +27,7 @@ body {
 }
 
 li {
-  font-size: 30px;
+  font-size: 40px;
 }
 .list {
   padding: 0;
@@ -42,7 +42,7 @@ li {
 }
 
 .list :hover {
-  color: #cbcbcb;
+  color: white;
   text-decoration: none;
   letter-spacing: 1px;
 }
@@ -104,15 +104,26 @@ li {
   height: 500px;
 }
 .title {
-  color: rgb(207, 224, 235);
+  color: white;
   font-family: "Ubuntu Condensed", serif;
   font-weight: bold;
 }
 .date,
 .plot {
-  color: rgb(207, 224, 235);
+  color: white;
   font-family: "Ubuntu Condensed", Georgia, "Times New Roman", Times, serif;
   width: 700px;
+}
+.btn {
+  width: 200px;
+  color:whitesmoke;
+  background-color: rgb(37,37,85);
+  border-radius: 20px;
+  transition: all 1s;
+}
+.btn:hover {
+  color:white;
+  transform: scale(1.1);
 }
 
 /* My List features */
@@ -137,4 +148,15 @@ li {
   background-repeat: no-repeat;
   width: 200px;
   height: 400px;
+}
+.button {
+  width: 50px;
+  color:white;
+  background-color: rgb(37,37,85);
+  border-radius: 10px;
+  transition: 1s;
+}
+.button:hover {
+  color:white;
+  transform: scale(1.1);
 }

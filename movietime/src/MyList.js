@@ -22,13 +22,9 @@ const MyList = () => {
       {movies.map((movie, id) => (
         <div>
           <button
-            type="button"
-            class="btn btn-secondary"
+            class="button"
             onClick={() => removeItem(movie.id)}
-          >
-            {" "}
-            X{" "}
-          </button>
+          > x </button>
           <Link
             to={`/movie/${movie.id}`}
             key={`index${movie.title}${movie.id}`}
