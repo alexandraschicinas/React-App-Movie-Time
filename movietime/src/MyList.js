@@ -16,10 +16,10 @@ const MyList = () => {
     setMovies(newList);
   };
   return (
-    <div className="Movies">
+    <div className="Movie">
       {movies.map((movie, id) => (
         <div>
-          <button onClick={() => removeItem(movie.id)}> X </button>
+          <button className="button" onClick={() => removeItem(movie.id)}> x </button>
           <Link
             to={`/movie/${movie.id}`}
             key={`index${movie.title}${movie.id}`}
